@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: accountservice
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      retries: 1
+      properties:
+        enable.idempotence: true
+        max.in.flight.requests.per.connection: 5
+    topic:
+      account-event: account.event
