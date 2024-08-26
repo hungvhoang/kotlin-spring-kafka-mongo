@@ -13,3 +13,6 @@ spring:
         max.in.flight.requests.per.connection: 5
     topic:
       account-event: account.event
+
+accountstorage:
+  url: http://localhost:8081/account-storage

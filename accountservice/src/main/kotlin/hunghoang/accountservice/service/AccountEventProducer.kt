@@ -1,6 +1,7 @@
 package hunghoang.accountservice.service
 
 import hunghoang.accountservice.model.AccountEvent
+import hunghoang.accountservice.service.accountmanagerservice.AccountManagerService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.kafka.core.KafkaTemplate
